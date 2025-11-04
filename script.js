@@ -107,9 +107,29 @@ const pages = {
   `,
 
   kontak: `
-    <section class="contact-section fade-in">
-      <h2>Hubungi Kami</h2>
-      <p>Kami siap membantu menjawab pertanyaan Anda seputar gaya hidup sehat dan nutrisi. Silakan isi formulir di bawah ini.</p>
+  <section class="contact-section fade-in">
+    <h2>Hubungi Kami</h2>
+    <p>Kami siap membantu menjawab pertanyaan Anda seputar gaya hidup sehat dan nutrisi. Silakan isi formulir di bawah ini atau hubungi kami melalui kontak yang tersedia.</p>
+    
+    <div class="contact-card-container">
+      <div class="contact-info-card">
+        <div class="contact-info-item">
+          <div class="contact-icon email-icon"></div>
+          <div class="contact-text">
+            <h3>Email</h3>
+            <p>info@healthylife.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-icon location-icon"></div>
+          <div class="contact-text">
+            <h3>Lokasi</h3>
+            <p>Sumedang, Jawa Barat, Indonesia</p>
+          </div>
+        </div>
+      </div>
+
       <form onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label for="nama">Nama Lengkap</label>
@@ -125,8 +145,9 @@ const pages = {
         </div>
         <button type="submit" class="submit-btn">Kirim Pesan</button>
       </form>
-    </section>
-  `,
+    </div>
+  </section>
+`,
 
   
   polaMakan: `
@@ -305,7 +326,7 @@ const pages = {
           <li><strong>Jadwal Konsisten:</strong> Tidur dan bangun pada jam yang sama setiap hari, bahkan di akhir pekan</li>
           <li><strong>Hindari Kafein:</strong> Batasi konsumsi kafein 6-8 jam sebelum tidur</li>
           <li><strong>Batasi Layar:</strong> Hindari gadget, TV, dan layar terang minimal 1 jam sebelum tidur</li>
-          <li><strong>Ciptakan Lingkungan Ideal:</strong> Kamar yang gelap, sejuk (18-20°C), dan tenang</li>
+          <li><strong>Ciptakan Lingkungan Ideal:</strong> Kamar yang gelap, sejuk (18-20℃), dan tenang</li>
           <li><strong>Rutinitas Relaksasi:</strong> Mandi air hangat, membaca buku, meditasi, atau pernapasan dalam</li>
           <li><strong>Hindari Makan Berat:</strong> Jangan makan 2-3 jam sebelum tidur</li>
           <li><strong>Olahraga Teratur:</strong> Namun hindari olahraga berat 3-4 jam sebelum tidur</li>
@@ -583,7 +604,7 @@ function handleSubmit(event) {
   const email = document.getElementById('email').value;
   const pesan = document.getElementById('pesan').value;
   
-  alert('Terimakasih ${nama}! Pesan Anda telah berhasil dikirim.\n\nKami akan segera menghubungi Anda melalui ${email}.');
+   alert(`Terimakasih ${nama}! Pesan Anda telah berhasil dikirim.\n\nKami akan segera menghubungi Anda melalui ${email}.`);
   
   event.target.reset();
 }
