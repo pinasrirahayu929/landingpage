@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthyLife</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">💚</span>
+        <span class="logo-text">HealthyLife</span>
+      </div>
+      <div class="nav-links" id="nav-list">
+        <a href="#" onclick="showPage('home')" class="nav-link">Beranda</a>
+        <a href="#" onclick="showPage('kontak')" class="nav-link">Kontak</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content"></main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>💚 HealthyLife</h3>
+        <p>Mulai hidup sehat dari sekarang. Kesehatan adalah investasi terbaik untuk masa depan Anda.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="#" onclick="showPage('home')">Beranda</a>
+        <a href="#" onclick="showPage('kontak')">Kontak</a>
+      </div>
+      <div class="footer-section">
+        <h4>Panduan</h4>
+        <a href="#" onclick="showPage('polaMakan')">Pola Makan</a>
+        <a href="#" onclick="showPage('olahraga')">Olahraga</a>
+        <a href="#" onclick="showPage('mental')">Kesehatan Mental</a>
+        <a href="#" onclick="showPage('hidrasi')">Hidrasi&Perencanaan</a>
+        <a href="#" onclick="showPage('vitaminD')">Paparan Matahari</a>
+        <a href="#" onclick="showPage('cek Rutin')"> Cek Kesehatan Rutin</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2025 HealthyLife | Dibuat untuk Memenuhi Tugas Pemograman Berbasis Web</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
