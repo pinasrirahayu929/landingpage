@@ -583,7 +583,7 @@ function handleSubmit(event) {
   const email = document.getElementById('email').value;
   const pesan = document.getElementById('pesan').value;
   
-  alert("Terimakasih ${nama}! Pesan Anda telah berhasil dikirim.\n\nKami akan segera menghubungi Anda melalui ${email}.");
+  alert('Terimakasih ${nama}! Pesan Anda telah berhasil dikirim.\n\nKami akan segera menghubungi Anda melalui ${email}.');
   
   event.target.reset();
 }
